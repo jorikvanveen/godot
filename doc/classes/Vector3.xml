@@ -25,6 +25,12 @@
 				Returns a Vector3 with the given components.
 			</description>
 		</method>
+		<method name="to_2">
+			<return type="Vector2">
+			<description>
+				Constructs a new Vector2 with the x and y from the current Vector3
+			</description>
+		</method>
 		<method name="abs">
 			<return type="Vector3" />
 			<description>

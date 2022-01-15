@@ -24,6 +24,11 @@
 				Constructs a new Vector2 from the given [code]x[/code] and [code]y[/code].
 			</description>
 		</method>
+		<method name="to_3">
+			<return type="Vector3" />
+			<description>
+				Constructs a new Vector3 with the x and y from the given Vector2 and the z set to 0
+			</description>
 		<method name="abs">
 			<return type="Vector2" />
 			<description>
