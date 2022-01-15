@@ -33,8 +33,10 @@
 
 #include "core/math/math_funcs.h"
 #include "core/ustring.h"
+#include "vector3.h"
 
 struct Vector2i;
+struct Vector3;
 
 struct Vector2 {
 	static const int AXIS_COUNT = 2;
@@ -58,6 +60,8 @@ struct Vector2 {
 
 		real_t coord[2];
 	};
+
+	_FORCE_INLINE_ Vector3 to_3() const;
 
 	_FORCE_INLINE_ real_t &operator[](int p_idx) {
 		return p_idx ? y : x;

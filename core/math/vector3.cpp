@@ -32,6 +32,10 @@
 
 #include "core/math/basis.h"
 
+Vector2 Vector3::to_2() const {
+	return Vector2(x, y);
+}
+
 void Vector3::rotate(const Vector3 &p_axis, real_t p_phi) {
 	*this = Basis(p_axis, p_phi).xform(*this);
 }

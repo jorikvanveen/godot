@@ -30,6 +30,10 @@
 
 #include "vector2.h"
 
+Vector3 Vector2::to_3() const {
+	return Vector3(x, y, 0);
+}
+
 real_t Vector2::angle() const {
 	return Math::atan2(y, x);
 }
